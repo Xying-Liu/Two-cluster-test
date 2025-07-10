@@ -1,1 +1,1 @@
-# Two-sample-test
+# Two-cluster-test
