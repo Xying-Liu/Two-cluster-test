@@ -7,18 +7,17 @@ from scipy.stats import binom_test, chi2
 
 def find_mutual_boundary_points(Z, A, B, k=7):
     """
-    Statistical test to determine whether two subsets A and B belong to the same cluster,
-    based on mutual nearest neighbor boundary points.
+    Statistical test that computes the p-value to determine whether two subsets A and B belong to the same cluster.
 
     Parameters:
-        Z (ndarray): Embedding matrix of all samples, shape (n_samples, n_features)
-        A (list[int]): Indices of the first subset in Z
-        B (list[int]): Indices of the second subset in Z
-        k (int): Number of nearest neighbors used in k-NN graph (default 7)
+        Z: Embedding matrix of all samples, shape (n_samples, n_features)
+        A: Indices of the first subset in Z
+        B: Indices of the second subset in Z
+        k: Number of nearest neighbors used in k-NN graph (default 7)
 
     Returns:
-        p_val (float): Combined global p-value. Smaller values indicate stronger
-                                evidence to reject the null hypothesis that A and B are from the same cluster.
+        p_val: Combined global p-value. Smaller values indicate stronger
+        evidence to reject the null hypothesis that A and B are from the same cluster.
     """
    if len(A) == 0 or len(B) == 0:
         return 1.0
