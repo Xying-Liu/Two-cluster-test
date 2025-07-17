@@ -1,5 +1,3 @@
-# two_cluster_test.py
-
 import numpy as np
 from sklearn.metrics import pairwise_distances
 from sklearn.neighbors import NearestNeighbors
