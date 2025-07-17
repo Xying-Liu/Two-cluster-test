@@ -1,7 +1,7 @@
 import numpy as np
 from two_cluster_test import find_mutual_boundary_points
 
-def same_cluster_split(Z, true_labels, p_thresh=0.05, k=7):
+def same_cluster_pairs(Z, true_labels, p_thresh=0.05, k=7):
     """
     Calculate splitting each true cluster into two parts 
     and testing if they belong to the same cluster using two-cluster-test.py.
