@@ -1,5 +1,5 @@
 import numpy as np
-from tree_bulider import sig_divide
+from tree_builder import sig_divide
 
 def load_data():
     """
