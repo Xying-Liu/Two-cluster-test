@@ -6,3 +6,6 @@ Two-cluster-test contains the following .py files:
 - Test subsets from the **same** cluster: `same_cluster.py`
 - Test subsets from **different** clusters: `different_cluster.py`
 - Compute a combined p-value for two subsets: `two_cluster_test.py`
+
+# Paper
+Related paper: http://arxiv.org/abs/2507.08382
