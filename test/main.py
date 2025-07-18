@@ -1,6 +1,6 @@
 import numpy as np
 from same_cluster import same_cluster_pairs
-from different_cluster import different_cluster_pairs_test
+from different_cluster import different_cluster_pairs
 
 def main():
     """
@@ -13,13 +13,11 @@ def main():
     # Evaluate same-cluster split accuracy
     same_results = same_cluster_pairs(Z, true_labels)
     same_accuracy = np.mean(same_results) if same_results else float('nan')
-    print(f"Same-cluster split accuracy: {same_accuracy:.4f}")
 
     # Evaluate different-cluster pair testing accuracy
-    diff_results = different_cluster_pairs_test(Z, true_labels)
+    diff_results = different_cluster_pairs(Z, true_labels)
     diff_accuracy = np.mean(diff_results) if diff_results else float('nan')
-    print(f"Different-cluster pairs test accuracy: {diff_accuracy:.4f}")
-
+    
 def load_data():
     """
     Placeholder for user data loading function.
